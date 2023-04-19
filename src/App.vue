@@ -18,12 +18,8 @@
       </li>
     </ul>
 
-    <div class="uncompleted">
-      <label>
-        <input type="checkbox" v-model="showOnlyUncompleted"/>
-        Tampilkan hanya kegiatan yang belum selesai
-      </label>
-    </div>
+    <p text-align="center"><hr>DAFTAR KEGIATAN</p>
+        
 
   </div>
 
@@ -35,7 +31,6 @@ export default {
     return {
       tasks: [],
       newTask: "",
-      showOnlyUncompleted: false
     };
   },
   methods: {
@@ -53,14 +48,6 @@ export default {
       this.tasks.splice(index, 1);
     }
   },
-  computed: {
-    filteredTasks() {
-      if (this.showOnlyUncompleted) {
-        return this.tasks.filter(task => !task.completed);
-      } else {
-        return this.tasks;
-      }
-    }
-  },
+  
 };
 </script>

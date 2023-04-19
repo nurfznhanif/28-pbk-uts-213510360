@@ -152,6 +152,6 @@ ul {
   cursor: pointer;
 }
 
-.uncompleted{
-  margin-top: 30px;
+hr{
+  border: 1px solid;
 }
